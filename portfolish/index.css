@@ -1,0 +1,17 @@
+body { /* Sin punto, porque 'body' es una etiqueta HTML */
+    background-color: aliceblue !important;
+}
+
+.bg-primary {
+    background-color: rgb(163, 168, 168);
+    color: #000000 !important;
+}
+
+.parrafo {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: medium;
+    color: #555;
+    line-height: 1.6;
+}

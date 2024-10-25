@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arango Seguros</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="circle">
+        <ul>
+          <li><a href="#quienes-somos">Quienes Somos</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#contacto">Contáctate</a></li>
+        </ul>
+    </nav>
+    <header>
+        <div class="header-content">
+            <h1>Seguros Arango</h1>
+            <p>Protege lo que más te importa</p>
+        </div>
+    </header>
+    <div class="container">
+        <section id="quienes-somos">
+            <h2>Quienes Somos</h2>
+            <p>En Seguros Arango, contamos con más de 20 años de experiencia ofreciendo las mejores coberturas en seguros para particulares y empresas. Nuestro compromiso es brindar un servicio personalizado para garantizar que encuentres la solución adecuada a tus necesidades de protección.</p>
+            <p>Desde seguros de hogar hasta planes integrales para empresas, nos adaptamos a cada cliente, asegurando su tranquilidad frente a cualquier eventualidad.</p>
+        </section>
+
+        <section id="servicios">
+            <h2>Servicios</h2>
+            <ul>
+                <li><strong>Seguros de hogar:</strong> Protege tu vivienda ante robos, incendios y otros riesgos.</li>
+                <li><strong>Seguros vehiculares:</strong> Coberturas para todo tipo de vehículos.</li>
+                <li><strong>Seguros de vida:</strong> Asegura el bienestar de tu familia ante imprevistos.</li>
+                <li><strong>Seguros para empresas:</strong> Planes adaptados a las necesidades de tu negocio.</li>
+                <li><strong>Asesoramiento personalizado:</strong> Nuestros expertos te guiarán en la elección del mejor plan de seguros.</li>
+            </ul>
+        </section>
+
+        <section id="contacto">
+            <h2>Contáctate</h2>
+            <p>Si tienes alguna consulta o deseas cotizar un seguro, no dudes en contactarnos:</p>
+            <form action="/enviar-consulta" method="post">
+                <input type="text" name="nombre" placeholder="Tu nombre" required>
+                <input type="email" name="email" placeholder="Tu correo electrónico" required>
+                <textarea name="mensaje" placeholder="Tu mensaje" rows="5" required></textarea>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Seguros Arango. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

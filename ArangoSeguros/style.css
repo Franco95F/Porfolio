@@ -1,0 +1,145 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 160, 175, 0.5); /* Color de fondo translúcido */
+    color: #333;
+}
+
+/* Estilo para el header */
+header {
+    position: relative;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 20px;
+}
+
+/* Imagen de fondo con clip-path */
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('imagenes/padres-ninos-perros-tiro-completo-al-aire-libre.jpg');
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 0% 100%); /* La imagen cubre la parte superior */
+    z-index: 1; /* Capa inferior al texto */
+}
+
+/* Contenido del header */
+.header-content {
+    position: relative;
+    z-index: 2; /* Texto sobre la imagen */
+    text-align: right;
+    width: 70%; /* Ocupa todo el ancho */
+    padding: 1.5em; /* Espacio interno para el texto */
+    border-radius: 10px; /* Esquinas redondeadas */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+    color: white;
+}
+
+header p {
+    margin: 5px 0 0;
+    font-size: 18px;
+    color: white;
+}
+
+nav.circle {
+    background-color: #00a0af; /* Cambia este valor por el color que prefieras */
+    padding: 20px; /* Asegúrate de tener algo de espacio interno si es necesario */
+}
+nav.circle ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+}
+
+nav.circle ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+nav.circle ul li:first-child {
+    margin-left: 20px; /* Ajusta el margen izquierdo del primer enlace */
+}
+nav.circle ul li a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+nav.circle ul li a:after {
+    display: block;
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 0;
+    transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+    z-index: -1;
+}
+
+nav.circle ul li a:hover:after {
+    width: 120%;
+    height: 120%;
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+    border-radius: 0;
+}
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    margin-top: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+form input, form textarea {
+    width: 100%; /* Cambiado a 100% para que sea más responsivo */
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input[type="submit"] {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px; /* Mejorar el padding */
+}
+
+form input[type="submit"]:hover {
+    background-color: #218838;
+}
